@@ -1,0 +1,47 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo" onclick="window.location.href='index.html'">LOGO</div>
+    <nav></nav>
+    <div class="user-info" id="user-info">Usuário não autenticado</div>
+  </header>
+  <main>
+    <form id="cadastro-form">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="data">Data de nascimento:</label>
+      <input type="date" id="data" name="data" />
+
+      <label>Sexo:</label>
+      <input type="radio" name="sexo" value="masc" /> Masculino
+      <input type="radio" name="sexo" value="fem" /> Feminino
+
+      <label>Interesses:</label>
+      <input type="checkbox" name="interesse" value="tech" /> Tecnologia
+      <input type="checkbox" name="interesse" value="arte" /> Arte
+
+      <label for="estilo">Estilo do formulário:</label>
+      <select id="estilo">
+        <option value="default">Default</option>
+        <option value="custom">Custom</option>
+      </select>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+  <footer>
+    <p>Equipe: Fulano, Beltrano, Ciclano</p>
+  </footer>
+</body>
+</html>
