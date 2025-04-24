@@ -20,14 +20,13 @@ header{
   width: 95%;
   margin: auto;
   display: flex;
-  height: 50px;
-  margin-top: 20px;
+  height: 60px;
+  top: 20px;
   position: relative;
-  height: 6.5vh;
 }
 #item1{
   position: relative;
-  left: 10%;
+  left: 5%;
   top: 30%;
   font-size: 22px;
 }
@@ -36,20 +35,22 @@ header{
 }
 #item2{
   position: relative;
-  left: 15%;
+  left: 10%;
   top: 30%;
   font-size: 22px;
 }
 #item3{
   position: relative;
-  left: 20%;
+  left: 15%;
   top: 30%;
   font-size: 22px;
 }
 #login{
-  position: relative;
-  left: 85%;
-  top: 30%;
+  position: absolute;
+  left: 97%;
+  top: 25%;
+  transform: translateX(-50%);
+  margin: auto;
   font-size: 22px;
   text-decoration: none
 }
@@ -58,7 +59,7 @@ header{
   height: 60vh;
   position: relative;
   left: 2.5%;
-  width: 4%;
+  width: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
