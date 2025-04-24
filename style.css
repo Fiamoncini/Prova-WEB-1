@@ -24,11 +24,33 @@ header{
   margin-top: 20px;
   height: 7vh;
 }
-#login{
+#item1{
   position: relative;
-  left: 79%;
+  left: 10%;
   top: 30%;
   font-size: 22px;
+}
+#item1:hover ~ #item2{
+  color: white;
+}
+#item2{
+  position: relative;
+  left: 15%;
+  top: 30%;
+  font-size: 22px;
+}
+#item3{
+  position: relative;
+  left: 20%;
+  top: 30%;
+  font-size: 22px;
+}
+#login{
+  position: relative;
+  left: 74%;
+  top: 30%;
+  font-size: 22px;
+  text-decoration: none
 }
 #nav2{
   background-color: gray;
