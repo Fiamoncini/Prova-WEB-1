@@ -26,22 +26,29 @@ header{
 }
 #item1{
   position: relative;
-  left: 5%;
-  top: 30%;
+  left: 100%;
+  top:30%;
   font-size: 22px;
 }
-#item1:hover ~ #item2{
-  color: white;
+#subitem1{
+  position: relative;
+  left: 50%;
+  top: 100%;
+  visibility: hidden;
+}
+#item1:hover ~ #subitem1{
+  visibility: visible;
+  background-color: gray;
 }
 #item2{
   position: relative;
-  left: 10%;
+  left: 200%;
   top: 30%;
   font-size: 22px;
 }
 #item3{
   position: relative;
-  left: 15%;
+  left: 300%;
   top: 30%;
   font-size: 22px;
 }
@@ -59,7 +66,7 @@ header{
   height: 60vh;
   position: relative;
   left: 2.5%;
-  width: 70px;
+  width: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
