@@ -17,12 +17,13 @@ header{
 }
 #nav1{
   background-color: gray;
-  width: 90%;
+  width: 95%;
   margin: auto;
   display: flex;
   height: 50px;
   margin-top: 20px;
-  height: 7vh;
+  position: relative;
+  height: 6.5vh;
 }
 #item1{
   position: relative;
@@ -47,7 +48,7 @@ header{
 }
 #login{
   position: relative;
-  left: 74%;
+  left: 85%;
   top: 30%;
   font-size: 22px;
   text-decoration: none
@@ -56,8 +57,8 @@ header{
   background-color: gray;
   height: 60vh;
   position: relative;
-  left: 5%;
-  width: 8%;
+  left: 2.5%;
+  width: 4%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,10 +67,10 @@ header{
   border-radius: 100%;
   width: 50px;
   background-color: gray;
+  position: relative;
   height: 50px;
-  position: fixed;
-  left: 5%;
-  top: 1.4%;
+  left: 1%;
+  top: 7%;
   z-index: 1;
 }
 #identificacao{
@@ -81,11 +82,10 @@ header{
 footer{
   display: flex;
   background-color: gray;
+  position: relative;
   height: 50px;
-  position: fixed;
-  bottom: 0;
-  width: 90%;
-  left: 5%;
+  width: 95%;
+  top: 15vh;
   margin: auto;
   justify-content: center;
   align-items: center;
