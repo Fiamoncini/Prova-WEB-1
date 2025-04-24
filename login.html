@@ -1,31 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Login - Supermercado Pedro</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
   <header>
     <img id="logo" src="testeimagem.webp" alt="Logo do Supermercado Pedro">
-    <p id="cabecalho">Cabeçalho</p>
+    <p id="cabecalho">Supermercado Pedro</p>
     <p id="identificacao">Usuário não autenticado</p>
   </header>
-  <div id="login">
+  
+  <div class="login-container">
+    <h2>Login</h2>
     <form id="formulario">
-      <label id="usuario" for="username">Usuário:</label>
-      <input type="text" id="username" name="username" required>
-      <br>
-      <label id="senha" for="password">Senha:</label>
-      <input type="password" id="password" name="password" required>
-      <br>
-      <button id="botaosubmit" value="Autenticar">
+      <div class="form-group">
+        <label id="usuario" for="username">Login:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label id="senha" for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit" id="botaosubmit">Autenticar</button>
     </form>
-    </div>
-    <footer>
-      <p>Pedro Alegria Fiamoncini - Vinicius Oneda - Matheus Spezia</p>
-    </footer>
-    <script src="script.js"></script>
+  </div>
+    
+  <footer>
+    <p>Pedro Alegria Fiamoncini - Vinicius Oneda - Matheus Spezia</p>
+  </footer>
 </body>
 </html>
