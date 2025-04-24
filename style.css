@@ -1,7 +1,7 @@
 header{
   display: flex;
   background-color: gray;
-  height: 50px;
+  height: 55px;
   top: 0;
   width: 95%;
   margin: auto;
@@ -12,6 +12,26 @@ header{
   font-size: 20px;
   color: white;
   margin: auto;
+}
+#nav1{
+  background-color: gray;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin-top: 20px;
+}
+#nav2{
+  background-color: gray;
+  height: 60vh;
+  position: relative;
+  left: 5%;
+  width: 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 #logo{
   border-radius: 100%;
