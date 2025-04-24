@@ -26,29 +26,95 @@ header{
 }
 #item1{
   position: relative;
-  left: 100%;
+  left: 155%;
   top:30%;
   font-size: 22px;
 }
 #subitem1{
   position: relative;
-  left: 50%;
-  top: 100%;
+  left: 137%;
+  top: 20%;
+  width: 80px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: gray;
   visibility: hidden;
 }
-#item1:hover ~ #subitem1{
+#subitem2{
+  width: 80px;
+  position: relative;
+  left: 137%;
+  height: 50px;
+  top: -7%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: gray;
+  visibility: hidden;
+}
+#subitem3{
+  width: 80px;
+  position: relative;
+  left: 171%;
+  height: 50px;
+  top: 20%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: gray;
+  visibility: hidden;
+}
+#subitem4{
+  width: 80px;
+  position: relative;
+  left: 171%;
+  height: 50px;
+  top: -7%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: gray;
+  visibility: hidden;
+}
+#subitem5{
+  width: 80px;
+  position: relative;
+  left: 213%;
+  height: 50px;
+  top: 20%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: gray;
+  visibility: hidden;
+}
+#subitem6{
+  width: 80px;
+  position: relative;
+  left: 213%;
+  height: 50px;
+  top: -7%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: gray;
+  visibility: hidden;
+}
+#item1:hover ~ #subitem1, #item1:hover ~ #subitem2, #item2:hover ~ #subitem3, #item2:hover ~ #subitem4, #item3:hover ~ #subitem5, #item3:hover ~ #subitem6{
   visibility: visible;
   background-color: gray;
 }
 #item2{
   position: relative;
-  left: 200%;
+  left: 190%;
   top: 30%;
   font-size: 22px;
 }
 #item3{
   position: relative;
-  left: 300%;
+  left: 230%;
   top: 30%;
   font-size: 22px;
 }
