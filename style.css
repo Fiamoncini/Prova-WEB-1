@@ -1,7 +1,7 @@
 header{
   display: flex;
   background-color: gray;
-  height: 55px;
+  height: 60px;
   top: 0;
   width: 95%;
   margin: auto;
@@ -9,6 +9,8 @@ header{
 #cabecalho{
   justify-content: center;
   align-items: center;
+  position: relative;
+  left: 5%;
   font-size: 20px;
   color: white;
   margin: auto;
@@ -18,17 +20,22 @@ header{
   width: 90%;
   margin: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 50px;
   margin-top: 20px;
+  height: 7vh;
+}
+#login{
+  position: relative;
+  left: 79%;
+  top: 30%;
+  font-size: 22px;
 }
 #nav2{
   background-color: gray;
   height: 60vh;
   position: relative;
   left: 5%;
-  width: 6%;
+  width: 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,9 +46,15 @@ header{
   background-color: gray;
   height: 50px;
   position: fixed;
-  top: 20;
   left: 5%;
+  top: 1.4%;
   z-index: 1;
+}
+#identificacao{
+  color: white;
+  position: relative;
+  right: 2%;
+  top: 8%;
 }
 footer{
   display: flex;
