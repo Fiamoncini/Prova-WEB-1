@@ -94,12 +94,12 @@ header {
   left: 0;
 }
 
-#subitem1 { top: 60px; }
-#subitem2 { top: 110px; }
-#subitem3 { top: 60px; }
-#subitem4 { top: 110px; }
-#subitem5 { top: 60px; }
-#subitem6 { top: 110px; }
+#subitem1 { top: 43px; }
+#subitem2 { top: 93px; }
+#subitem3 { top: 43px; }
+#subitem4 { top: 93px; }
+#subitem5 { top: 43px; }
+#subitem6 { top: 93px; }
 
 #item1:hover ~ #subitem1, 
 #item1:hover ~ #subitem2, 
@@ -236,17 +236,25 @@ footer {
 
 #cadastre-se{
   position: relative;
-  left: 25%;
+  left: 24%;
   top: 1.5vh;
+  text-decoration: none;
+  font-size: 17px;
+  color:white;
 }
 
+#cadastre-se:hover {
+  cursor: grab;
+  text-decoration: underline;
+  color: #ccc;
+}
 #botaosubmit:hover {
   background-color: #d35400;
 }
 
 .cadastro-container {
   background-color: #ecf0f1;
-  margin: 120px 0 70px 80px;
+  margin: 0px 0 70px 80px;
   padding: 30px;
   min-height: calc(100vh - 190px);
 }

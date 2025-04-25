@@ -4,30 +4,47 @@ document.addEventListener("DOMContentLoaded", function() {
     const botaosubmit = document.getElementById("botaosubmit");
     if (botaosubmit) {
         botaosubmit.addEventListener("click", function (event) {
+            event.preventDefault(); // Previne o comportamento padrão do formulário
+            
             let login = document.getElementById("username").value;
             let senha = document.getElementById("password").value;
 
-            if (login && senha) {
-                localStorage.setItem("login", login);
+            const storedLogin = localStorage.getItem("login");
+            const storedSenha = localStorage.getItem("senha");
+
+            if (!login || !senha) {
+                alert("Login e senha não podem ser vazios!");
+            } else if (storedLogin !== login) {
+                alert("Usuário não cadastrado!");
+            } else if (storedSenha !== senha) {
+                alert("Senha incorreta!");
+            } else {
+                localStorage.setItem("autenticado", "true");
                 alert("Autenticado!");
                 window.location.href = "index.html";
-            } else {
-                alert("Login e senha não podem ser vazios!");
             }
         });
     }
 
-    const themeRadios = document.querySelectorAll('input[name="theme"]');
-    if (themeRadios.length > 0) {
-        themeRadios.forEach(radio => {
-            radio.addEventListener('change', function() {
-                const cadastroForm = document.querySelector('.cadastro-form');
-                if (this.value === 'custom') {
-                    cadastroForm.classList.add('custom-theme');
-                } else {
-                    cadastroForm.classList.remove('custom-theme');
-                }
-            });
+    const formularioCadastro = document.getElementById("formulario-cadastro");
+    if (formularioCadastro) {
+        formularioCadastro.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            let login = document.getElementById("username").value;
+            let senha = document.getElementById("password").value;
+
+            if (!login || !senha) {
+                alert("Login e senha são obrigatórios!");
+                return;
+            }
+
+            localStorage.setItem("login", login);
+            localStorage.setItem("senha", senha);
+            localStorage.setItem("autenticado", "true");
+
+            alert("Cadastro realizado com sucesso!");
+            window.location.href = "index.html";
         });
     }
 
@@ -37,14 +54,34 @@ document.addEventListener("DOMContentLoaded", function() {
             window.location.href = "index.html";
         });
     }
+    
+    // Adicionar um botão de logout
+    const loginLink = document.getElementById("loginir");
+    if (loginLink) {
+        const autenticado = localStorage.getItem("autenticado") === "true";
+        if (autenticado) {
+            loginLink.textContent = "LOGOUT";
+            loginLink.href = "#";
+            loginLink.addEventListener("click", function(event) {
+                event.preventDefault();
+                localStorage.setItem("autenticado", "false");
+                updateUserIdentification();
+                window.location.href = "index.html";
+                alert("Logout realizado com sucesso!");
+            });
+        }
+    }
 });
+
 function updateUserIdentification() {
     const userIdentification = document.getElementById("identificacao");
     if (userIdentification) {
-        const loggedInUser = localStorage.getItem("login");
-        if (loggedInUser) {
+        const autenticado = localStorage.getItem("autenticado") === "true";
+        const nome = localStorage.getItem("login");
+
+        if (autenticado && nome) {
             const userPhotoHTML = '<a href="cadastro.html"><img src="user-photo.webp" alt="Foto do Usuário" class="user-photo"></a>';
-            userIdentification.innerHTML = userPhotoHTML + "Usuário: " + loggedInUser;
+            userIdentification.innerHTML = userPhotoHTML + "Usuário: " + nome;
         } else {
             userIdentification.textContent = "Usuário não autenticado";
         }
