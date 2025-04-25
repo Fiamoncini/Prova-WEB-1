@@ -159,6 +159,10 @@ header {
   flex-wrap: wrap;
 }
 
+#texto1{
+  position: relative;
+  left: 5%;
+}
 #texto1, #texto2 {
   font-size: 15px;
   width: 45%;
