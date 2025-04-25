@@ -229,7 +229,18 @@ footer {
   color: black;
   box-sizing: border-box;
 }
-
+#imagemsupermercado{
+  width: 200px;
+  position: relative;
+  left: 25%;
+  top: 5vh;
+}
+#imagemsupermercado2{
+  width: 200px;
+  position: relative;
+  left: 47%;
+  top: 5vh;
+}
 #botaosubmit {
   background-color: #000000;
   color: white;
@@ -244,7 +255,7 @@ footer {
 
 #cadastre-se{
   position: relative;
-  left: 24%;
+  left: 23%;
   top: 1.5vh;
   text-decoration: none;
   font-size: 17px;
