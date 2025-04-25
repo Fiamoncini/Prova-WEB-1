@@ -34,7 +34,7 @@ header {
   font-size: 20px;
   color: #ecf0f1; /* branco suave */
   margin: 0;
-  left: 5%;
+  left: 3%;
 }
 
 #identificacao {
@@ -138,7 +138,7 @@ header {
 }
 
 #container-principal {
-  background-color: #ecf0f1;
+  background-image: url();
   padding: 20px;
   height: 100vh;
   color: #2c3e50;
