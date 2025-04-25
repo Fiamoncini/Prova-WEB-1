@@ -46,6 +46,21 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("Cadastro realizado com sucesso!");
             window.location.href = "index.html";
         });
+        
+        // Implementando a funcionalidade de seleção de tema
+        const themeRadios = document.querySelectorAll('input[name="tema"]');
+        if (themeRadios.length > 0) {
+            themeRadios.forEach(radio => {
+                radio.addEventListener('change', function() {
+                    const form = document.querySelector('.cadastro-form');
+                    if (this.value === 'custom') {
+                        form.classList.add('custom-theme');
+                    } else {
+                        form.classList.remove('custom-theme');
+                    }
+                });
+            });
+        }
     }
 
     const logo = document.getElementById("logo");

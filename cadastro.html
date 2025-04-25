@@ -41,6 +41,17 @@
     <div class="cadastro-form">
       <h2>Cadastro de Cliente</h2>
       
+      <!-- Adicionando o seletor de tema -->
+      <div class="theme-selector">
+        <h3>Escolha o tema:</h3>
+        <label>
+          <input type="radio" name="tema" value="default" checked> Default
+        </label>
+        <label>
+          <input type="radio" name="tema" value="custom"> Custom
+        </label>
+      </div>
+      
       <form id="formulario-cadastro">
         <div class="form-group">
           <label for="username">Login:</label>
@@ -50,6 +61,11 @@
         <div class="form-group">
           <label for="password">Senha:</label>
           <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="form-group">
+          <label for="cpf">CPF:</label>
+          <input type="number" id="cpf" name="cpf" placeholder="Ex: 11111111111">
         </div>
 
         <div class="form-group">
