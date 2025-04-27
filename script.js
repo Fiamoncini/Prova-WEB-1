@@ -95,7 +95,7 @@ function updateUserIdentification() {
         const nome = localStorage.getItem("login");
 
         if (autenticado && nome) {
-            const userPhotoHTML = '<a href="cadastro.html"><img src="user-photo.webp" alt="Foto do Usuário" class="user-photo"></a>';
+            const userPhotoHTML = '<a href="cadastro.html"><img src="usuario.png" alt="Foto do Usuário" class="user-photo"></a>';
             userIdentification.innerHTML = userPhotoHTML + "Usuário: " + nome;
         } else {
             userIdentification.textContent = "Usuário não autenticado";
