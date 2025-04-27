@@ -89,7 +89,7 @@ nav a:hover {
 }
 
 .subMenuEstreito {
-  background-color: lightblue;
+  background-color: cadetblue;
   padding-top: 5px;
   position: fixed;
   /*display: none; OU*/ visibility: hidden
