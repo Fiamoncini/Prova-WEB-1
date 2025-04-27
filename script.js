@@ -80,7 +80,7 @@ function updateUserIdentification() {
 
         if (autenticado && nome) {
             const userPhotoHTML = '<a href="cadastro.html"><img src="usuario.png" alt="Foto do Usuário" class="user-photo"></a>';
-            userIdentification.innerHTML = userPhotoHTML + "Usuário: " + nome;
+            userIdentification.innerHTML = userPhotoHTML + nome;
         } else {
             userIdentification.textContent = "Usuário não autenticado";
         }
