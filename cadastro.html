@@ -40,9 +40,9 @@
   
   <div class="cadastro-container">
     <div class="cadastro-form">
-      <h2>Cadastro de Cliente</h2>
+      <h2>Perfil do Cliente</h2>
       
-      <!-- Adicionando o seletor de tema -->
+      <!-- Seletor de tema -->
       <div class="theme-selector">
         <h3>Escolha o tema:</h3>
         <label>
@@ -55,43 +55,49 @@
       
       <form id="formulario-cadastro">
         <div class="form-group">
-          <label for="username">Login:</label>
-          <input type="text" id="username" name="username" required>
+          <label for="nome">Nome Completo:</label>
+          <input type="text" id="nome" name="nome" required>
         </div>
         
         <div class="form-group">
-          <label for="password">Senha:</label>
-          <input type="password" id="password" name="password" required>
+          <label for="idade">Idade:</label>
+          <input type="number" id="idade" name="idade" min="18" max="120">
         </div>
 
         <div class="form-group">
-          <label for="cpf">CPF:</label>
-          <input type="number" id="cpf" name="cpf" placeholder="Ex: 11111111111">
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="Ex: (00) 00000-0000">
         </div>
 
         <div class="form-group">
-          <label>Tipo de Cliente:</label>
+          <label>Preferência de contato:</label>
           <div class="radio-group">
             <label>
-              <input type="radio" name="tipo-cliente" value="pessoa-fisica" checked> Pessoa Física
+              <input type="radio" name="contato" value="email" checked> E-mail
             </label>
             <label>
-              <input type="radio" name="tipo-cliente" value="pessoa-juridica"> Pessoa Jurídica
+              <input type="radio" name="contato" value="telefone"> Telefone
+            </label>
+            <label>
+              <input type="radio" name="contato" value="whatsapp"> WhatsApp
             </label>
           </div>
         </div>
         
         <div class="form-group">
-          <label>Interesses:</label>
+          <label>Seções de interesse:</label>
           <div class="checkbox-group">
             <label>
-              <input type="checkbox" name="interesses" value="alimentos"> Alimentos
+              <input type="checkbox" name="interesses" value="hortifruti"> Hortifrúti
             </label>
             <label>
-              <input type="checkbox" name="interesses" value="bebidas"> Bebidas
+              <input type="checkbox" name="interesses" value="acougue"> Açougue
             </label>
             <label>
-              <input type="checkbox" name="interesses" value="limpeza"> Produtos de Limpeza
+              <input type="checkbox" name="interesses" value="padaria"> Padaria
+            </label>
+            <label>
+              <input type="checkbox" name="interesses" value="eletronicos"> Eletrônicos
             </label>
           </div>
         </div>
@@ -102,7 +108,7 @@
         </div>
         
         <div class="form-buttons">
-          <button type="submit" id="botao-cadastro">Cadastrar</button>
+          <button type="submit" id="botao-cadastro">Salvar</button>
           <button type="button" class="cancel" onclick="window.location.href='index.html'">Cancelar</button>
         </div>
       </form>
