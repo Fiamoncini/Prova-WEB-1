@@ -88,13 +88,48 @@ nav a:hover {
   /*display: none; OU*/ visibility: hidden
 }
 
+.subMenuEstreito {
+  background-color: lightblue;
+  padding-top: 5px;
+  position: fixed;
+  /*display: none; OU*/ visibility: hidden
+}
+
 .menuPrincipal li:hover .subMenu {
   display: block; visibility: visible
+}
+
+.subMenu li:hover .subMenuEstreito {
+  display: inline; 
+  visibility: visible
 }
 
 .subMenu li {
   display: block;
   margin-left: 15px;
+}
+
+.subMenuEstreito li {
+  display: block;
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 450px) {
+  #menuEstreito {
+      display: block;
+  }
+  #menu {
+      display: none;
+  }
+}
+
+@media screen and (min-width: 451px) {
+  #menuEstreito {
+      display: none;
+  }
+  #menu {
+      display: block;
+  }
 }
 
 /*#nav1 {
