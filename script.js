@@ -9,16 +9,11 @@ document.addEventListener("DOMContentLoaded", function() {
             let login = document.getElementById("username").value;
             let senha = document.getElementById("password").value;
 
-            const storedLogin = localStorage.getItem("login");
-            const storedSenha = localStorage.getItem("senha");
-
             if (!login || !senha) {
                 alert("Login e senha não podem ser vazios!");
-            } else if (storedLogin !== login) {
-                alert("Usuário não cadastrado!");
-            } else if (storedSenha !== senha) {
-                alert("Senha incorreta!");
             } else {
+                // Permite qualquer login e senha
+                localStorage.setItem("login", login);
                 localStorage.setItem("autenticado", "true");
                 alert("Autenticado!");
                 window.location.href = "index.html";
@@ -30,20 +25,9 @@ document.addEventListener("DOMContentLoaded", function() {
     if (formularioCadastro) {
         formularioCadastro.addEventListener("submit", function(event) {
             event.preventDefault();
-
-            let login = document.getElementById("username").value;
-            let senha = document.getElementById("password").value;
-
-            if (!login || !senha) {
-                alert("Login e senha são obrigatórios!");
-                return;
-            }
-
-            localStorage.setItem("login", login);
-            localStorage.setItem("senha", senha);
-            localStorage.setItem("autenticado", "true");
-
-            alert("Cadastro realizado com sucesso!");
+            
+            // Não salva informações de cadastro
+            alert("Cadastro processado com sucesso!");
             window.location.href = "index.html";
         });
         
@@ -70,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
     
-    // Adicionar um botão de logout
+    // Botão de logout
     const loginLink = document.getElementById("loginir");
     if (loginLink) {
         const autenticado = localStorage.getItem("autenticado") === "true";
