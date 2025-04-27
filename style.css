@@ -13,7 +13,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -50,21 +50,68 @@ header {
   cursor: pointer;
 }
 
-#nav1 {
+nav {
+  background-color: #34495e;
+  padding: 22px;
+}
+
+nav menu {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav li {
+  list-style: none;
+  padding-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: lightgray;
+}
+
+.menuPrincipal > li {
+  display: inline-block;
+}
+
+.subMenu {
+  background-color: #2980b9;
+  padding-top: 5px;
+  position: fixed;
+  /*display: none; OU*/ visibility: hidden
+}
+
+.menuPrincipal li:hover .subMenu {
+  display: block; visibility: visible
+}
+
+.subMenu li {
+  display: block;
+  margin-left: 15px;
+}
+
+/*#nav1 {
   background-color: #34495e;
   width: 100%;
   margin: 0px 0 0 0;
   display: flex;
   height: 60px;
-  position: fixed; /* Altere para fixed se estiver como relative */
-  top: 60px; /* Posicione logo abaixo do header */
+  position: fixed; /* Altere para fixed se estiver como relative 
+  top: 60px; /* Posicione logo abaixo do header 
   left: 0;
   right: 0;
   z-index: 99;
   box-sizing: border-box;
 }
 
-#nav1 > div {
+/*#nav1 > div {
   position: relative;
   margin: 0 40px;
 }
@@ -83,7 +130,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2980b9; /* azul forte */
+  background-color: #2980b9; /* azul forte 
   visibility: hidden;
   position: absolute;
   z-index: 10;
@@ -113,38 +160,45 @@ header {
 #subitem3:hover, #subitem4:hover,
 #subitem5:hover, #subitem6:hover {
   visibility: visible;
-}
+}*/
 
 #loginir {
   position: absolute;
+  margin: 0px;
+  padding-bottom: 20px;
   right: 20px;
-  top: 50%;
+  /*top: 50%;*/
   transform: translateY(-50%);
   font-size: 22px;
   text-decoration: none;
   color: #ecf0f1;
 }
 
-#nav2 {
-  background-color: #1abc9c; /* verde vibrante */
+#loginir:hover {
+  text-decoration: underline;
+  color: lightgray;
+}
+
+/*#nav2 {
+  background-color: #1abc9c; /* verde vibrante 
   height: calc(100vh - 120px);
   width: 80px;
   position: fixed;
-  top: 120px; /* Mantenha esse valor igual à soma das alturas do header (60px) e nav1 (60px) */
+  top: 120px; /* Mantenha esse valor igual à soma das alturas do header (60px) e nav1 (60px) 
   left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
   padding-top: 20px;
-  z-index: 98; /* Adicione um z-index menor que o do cabeçalho e nav1 */
-}
+  z-index: 98; /* Adicione um z-index menor que o do cabeçalho e nav1 
+} */
 
 #container-principal {
   background-image: url();
-  padding: 20px 20px 20px 100px; /* Aumente o padding esquerdo para dar espaço ao menu */
-  min-height: calc(100vh - 120px); /* Altura mínima considerando o header e nav1 */
-  margin-top: 120px; /* Margem igual à soma das alturas do header e nav1 */
+  padding: 22px; /* Aumente o padding esquerdo para dar espaço ao menu */
+  /*min-height: calc(100vh - 120px); /* Altura mínima considerando o header e nav1 */
+  /*margin-top: 50px; /* Margem igual à soma das alturas do header e nav1 */
   color: #2c3e50;
   box-sizing: border-box;
 }
@@ -163,10 +217,10 @@ header {
   flex-wrap: wrap;
 }
 
-#texto1{
+/*#texto1{
   position: relative;
   left: 5%;
-}
+}*/
 #texto1, #texto2 {
   font-size: 15px;
   width: 45%;
@@ -273,7 +327,7 @@ footer {
 
 .cadastro-container {
   background-color: #ecf0f1;
-  margin: 120px 0 70px 80px; /* Margem superior igual à soma das alturas do header e nav1 */
+  margin: 0px 0 0px 0px; /* Margem superior igual à soma das alturas do header e nav1 */
   padding: 30px;
   min-height: calc(100vh - 190px);
 }
@@ -281,6 +335,7 @@ footer {
 .cadastro-form {
   max-width: 600px;
   margin: 0 auto;
+  margin-bottom: 48px;
   background-color: #ffffff;
   padding: 30px;
   border-radius: 8px;
@@ -396,3 +451,23 @@ footer {
   background-color: #fceff9;
   border-color: #9b59b6;
 }
+
+
+/*<nav id="nav1">
+    <div>
+      <span id="item1">Produtos</span>
+      <p id="subitem1" class="subitem">Alimentos</p>
+      <p id="subitem2" class="subitem">Bebidas</p>
+    </div>
+    <div>
+      <span id="item2">Serviços</span>
+      <p id="subitem3" class="subitem">Entregas</p>
+      <p id="subitem4" class="subitem">Pedidos</p>
+    </div>
+    <div>
+      <span id="item3">Sobre</span>
+      <p id="subitem5" class="subitem">História</p>
+      <p id="subitem6" class="subitem">Contato</p>
+    </div>
+    <a id="loginir" href="login.html">LOGIN</a>
+  </nav>*/
