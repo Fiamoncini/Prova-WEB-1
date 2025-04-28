@@ -268,6 +268,14 @@ nav a:hover {
     width: 100%;
     margin-bottom: 20px;
   }
+  #imagemsupermercado{
+    transform: translate(-8%);
+    margin-bottom: 10px;
+  }
+  #imagemsupermercado2{
+    transform: translate(-46%);
+    margin-bottom: 70px;
+  }
 }
 
 #texto3 {
