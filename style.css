@@ -190,10 +190,17 @@ nav a:hover {
     width: 100%;
     margin-bottom: 20px;
   }
-  .login-container {
-    width: 90%;
+  #container-login {
+    top: 2px;
+    position: relative;
+    width: 80%;
     margin: 0 auto;
     box-sizing: border-box;
+  }
+  #identificacao{
+    display: flex;
+    position: relative;
+    left: 18%;
   }
 }
 
