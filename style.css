@@ -31,7 +31,7 @@ header {
 #cabecalho {
   position: relative;
   font-size: 20px;
-  color: #ecf0f1; /* branco suave */
+  color: #ecf0f1;
   margin: 0;
   left: 3%;
 }
@@ -85,14 +85,14 @@ nav a:hover {
   background-color: #2980b9;
   padding-top: 5px;
   position: fixed;
-  /*display: none; OU*/ visibility: hidden
+  visibility: hidden
 }
 
 .subMenuEstreito {
   background-color: cadetblue;
   padding-top: 5px;
   position: fixed;
-  /*display: none; OU*/ visibility: hidden
+  visibility: hidden
 }
 
 .menuPrincipal li:hover .subMenu {
@@ -121,6 +121,20 @@ nav a:hover {
   #menu {
       display: none;
   }
+  #imagemsupermercado{
+    transform: translate(-8%);
+    margin-bottom: 10px;
+  }
+  #imagemsupermercado2{
+    transform: translate(-46%);
+    margin-bottom: 70px;
+  }
+  .login-container {
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
 }
 
 @media screen and (min-width: 501px) {
@@ -130,79 +144,14 @@ nav a:hover {
   #menu {
       display: block;
   }
+
 }
-
-/*#nav1 {
-  background-color: #34495e;
-  width: 100%;
-  margin: 0px 0 0 0;
-  display: flex;
-  height: 60px;
-  position: fixed; /* Altere para fixed se estiver como relative 
-  top: 60px; /* Posicione logo abaixo do header 
-  left: 0;
-  right: 0;
-  z-index: 99;
-  box-sizing: border-box;
-}
-
-/*#nav1 > div {
-  position: relative;
-  margin: 0 40px;
-}
-
-#item1, #item2, #item3 {
-  display: block;
-  padding: 15px 10px;
-  font-size: 22px;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.subitem {
-  width: 120px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #2980b9; /* azul forte 
-  visibility: hidden;
-  position: absolute;
-  z-index: 10;
-  color: white;
-}
-
-#subitem1, #subitem2,
-#subitem3, #subitem4,
-#subitem5, #subitem6 {
-  left: 0;
-}
-
-#subitem1 { top: 43px; }
-#subitem2 { top: 93px; }
-#subitem3 { top: 43px; }
-#subitem4 { top: 93px; }
-#subitem5 { top: 43px; }
-#subitem6 { top: 93px; }
-
-#item1:hover ~ #subitem1, 
-#item1:hover ~ #subitem2, 
-#item2:hover ~ #subitem3, 
-#item2:hover ~ #subitem4, 
-#item3:hover ~ #subitem5, 
-#item3:hover ~ #subitem6,
-#subitem1:hover, #subitem2:hover,
-#subitem3:hover, #subitem4:hover,
-#subitem5:hover, #subitem6:hover {
-  visibility: visible;
-}*/
 
 #loginir {
   position: absolute;
   margin: 0px;
   padding-bottom: 20px;
   right: 20px;
-  /*top: 50%;*/
   transform: translateY(-50%);
   font-size: 22px;
   text-decoration: none;
@@ -214,26 +163,8 @@ nav a:hover {
   color: lightgray;
 }
 
-/*#nav2 {
-  background-color: #1abc9c; /* verde vibrante 
-  height: calc(100vh - 120px);
-  width: 80px;
-  position: fixed;
-  top: 120px; /* Mantenha esse valor igual à soma das alturas do header (60px) e nav1 (60px) 
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-  padding-top: 20px;
-  z-index: 98; /* Adicione um z-index menor que o do cabeçalho e nav1 
-} */
-
 #container-principal {
-  background-image: url();
-  padding: 22px; /* Aumente o padding esquerdo para dar espaço ao menu */
-  /*min-height: calc(100vh - 120px); /* Altura mínima considerando o header e nav1 */
-  /*margin-top: 50px; /* Margem igual à soma das alturas do header e nav1 */
+  padding: 22px;
   color: #2c3e50;
   box-sizing: border-box;
 }
@@ -252,10 +183,6 @@ nav a:hover {
   flex-wrap: wrap;
 }
 
-/*#texto1{
-  position: relative;
-  left: 5%;
-}*/
 #texto1, #texto2 {
   font-size: 15px;
   width: 45%;
@@ -267,14 +194,6 @@ nav a:hover {
   #texto1, #texto2 {
     width: 100%;
     margin-bottom: 20px;
-  }
-  #imagemsupermercado{
-    transform: translate(-8%);
-    margin-bottom: 10px;
-  }
-  #imagemsupermercado2{
-    transform: translate(-46%);
-    margin-bottom: 70px;
   }
 }
 
@@ -306,7 +225,7 @@ footer {
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 120px auto 70px; /* 120px do topo = header + nav1 */
+  margin: 120px auto 70px;
   color: white;
 }
 
@@ -370,7 +289,7 @@ footer {
 
 .cadastro-container {
   background-color: #ecf0f1;
-  margin: 0px 0 0px 0px; /* Margem superior igual à soma das alturas do header e nav1 */
+  margin: 0px 0 0px 0px;
   padding: 30px;
   min-height: calc(100vh - 190px);
 }
@@ -494,23 +413,3 @@ footer {
   background-color: #fceff9;
   border-color: #9b59b6;
 }
-
-
-/*<nav id="nav1">
-    <div>a
-      <span id="item1">Produtos</span>
-      <p id="subitem1" class="subitem">Alimentos</p>
-      <p id="subitem2" class="subitem">Bebidas</p>
-    </div>
-    <div>
-      <span id="item2">Serviços</span>
-      <p id="subitem3" class="subitem">Entregas</p>
-      <p id="subitem4" class="subitem">Pedidos</p>
-    </div>
-    <div>
-      <span id="item3">Sobre</span>
-      <p id="subitem5" class="subitem">História</p>
-      <p id="subitem6" class="subitem">Contato</p>
-    </div>
-    <a id="loginir" href="login.html">LOGIN</a>
-  </nav>*/
