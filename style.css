@@ -256,13 +256,13 @@ footer {
   width: 200px;
   position: relative;
   left: 25%;
-  top: 5vh;
+  margin-bottom: 10px;
 }
 #imagemsupermercado2{
   width: 200px;
   position: relative;
   left: 47%;
-  top: 5vh;
+  margin-bottom: 10px;
 }
 #botaosubmit {
   background-color: #000000;
