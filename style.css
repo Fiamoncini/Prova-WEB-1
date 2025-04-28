@@ -129,11 +129,6 @@ nav a:hover {
     transform: translate(-46%);
     margin-bottom: 70px;
   }
-  .login-container {
-    width: 90%;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
 
 }
 
@@ -194,6 +189,11 @@ nav a:hover {
   #texto1, #texto2 {
     width: 100%;
     margin-bottom: 20px;
+  }
+  .login-container {
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 }
 
